@@ -1,7 +1,7 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Prompt } from "next/font/google";
 import "./globals.css";
-import RandomBackground from "@/components/ui/RandomBackground";
 
 const prompt = Prompt({
   subsets: ["thai", "latin"],
@@ -18,10 +18,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="th">
-      <body className={`${prompt.className} antialiased bg-[#1b4332] text-white relative`}>
-        <div className="fixed inset-0 -z-10">
-          <RandomBackground />
-        </div>
+      <body
+        className={`${prompt.className} antialiased bg-[#1b4332] text-white relative overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>

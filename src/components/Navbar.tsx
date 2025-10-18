@@ -8,25 +8,25 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
           <span className="text-yellow-400">🍃</span>
-          <span>Herbal Luxe</span>
+          <span>Fin Samunphrai</span>
         </Link>
 
         {/* Menu Items */}
         <div className="hidden md:flex items-center gap-8">
           <Link href="/" className="hover:text-yellow-300 transition">
-            Home
+            หน้าหลัก
           </Link>
           <Link href="/products" className="hover:text-yellow-300 transition">
-            Products
+            สินค้า
           </Link>
           <Link href="/about" className="hover:text-yellow-300 transition">
-            About
+            เกี่ยวกับเรา
           </Link>
           <Link href="/reviews" className="hover:text-yellow-300 transition">
-            Reviews
+            รีวิว
           </Link>
           <Link href="/contact" className="hover:text-yellow-300 transition">
-            Contact
+            ติดต่อเรา
           </Link>
         </div>
 

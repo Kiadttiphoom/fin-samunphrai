@@ -22,7 +22,7 @@ export default function BuySection() {
           <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl">
             {/* Shine effect */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
-            
+
             <div className="relative z-10">
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
@@ -72,22 +72,31 @@ export default function BuySection() {
 
         {/* Payment & Shipping Info */}
         <div className="text-center">
-          <p className="text-green-200 mb-4">ช่องทางการชำระเงิน</p>
-          <div className="flex flex-wrap justify-center gap-4 items-center">
-            {/* <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 text-white font-semibold">
-              💳 บัตรเครดิต/เดบิต
-            </div> */}
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 w-[20%] rounded-full border border-white/20 text-white font-semibold">
+          <p className="text-green-200 mb-4 text-lg md:text-xl font-medium">
+            ช่องทางการชำระเงิน
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 items-center max-w-md mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm px-5 py-3 md:px-6 md:py-3 
+      rounded-full border border-white/20 text-white font-semibold 
+      text-sm md:text-base w-[45%] md:w-auto">
               🏦 โอนผ่านธนาคาร
             </div>
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 w-[20%] rounded-full border border-white/20 text-white font-semibold">
+
+            <div className="bg-white/10 backdrop-blur-sm px-5 py-3 md:px-6 md:py-3 
+      rounded-full border border-white/20 text-white font-semibold 
+      text-sm md:text-base w-[45%] md:w-auto">
               📱 พร้อมเพย์
             </div>
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 w-[20%] rounded-full border border-white/20 text-white font-semibold">
+
+            <div className="bg-white/10 backdrop-blur-sm px-5 py-3 md:px-6 md:py-3 
+      rounded-full border border-white/20 text-white font-semibold 
+      text-sm md:text-base w-[90%] md:w-auto">
               💰 เก็บเงินปลายทาง
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

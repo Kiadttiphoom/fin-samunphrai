@@ -3,16 +3,19 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden z-20">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/images/hero.jpg')",
         }}
       >
-        {/* Dark Overlay */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
+
+        {/* Smooth fade to body background */}
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#1b4332]"></div>
       </div>
 
       {/* Content */}
@@ -25,17 +28,15 @@ export default function HeroSection() {
         >
           {/* Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-2">
-            Pure Luxury
+            สมุนไพรไทย
           </h1>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-400 leading-tight mb-6">
-            Herbal Wellness
+            เพื่อสุขภาพที่ดีของคุณ
           </h2>
 
           {/* Description */}
           <p className="text-white text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
-            Discover our premium collection of handcrafted herbal remedies,
-            essential oils, and wellness products sourced from nature's finest
-            ingredients.
+            ค้นพบสมุนไพรไทยคุณภาพสูงที่คัดสรรมาเพื่อส่งเสริมสุขภาพและความงามของคุณอย่างเป็นธรรมชาติ
           </p>
 
           {/* Buttons */}
@@ -45,14 +46,14 @@ export default function HeroSection() {
               whileTap={{ scale: 0.95 }}
               className="bg-amber-500 hover:bg-amber-600 text-gray-900 px-8 py-3 rounded-md font-semibold transition shadow-lg"
             >
-              Shop Collection
+              สั่งซื้อเลย
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-transparent border-2 border-amber-500 hover:bg-amber-500/20 text-white px-8 py-3 rounded-md font-semibold transition"
             >
-              Learn More
+              เรียนรู้เพิ่มเติม
             </motion.button>
           </div>
         </motion.div>

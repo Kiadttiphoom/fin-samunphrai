@@ -7,18 +7,22 @@ import IngredientSection from "@/components/IngredientSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import BuySection from "@/components/BuySection";
 import Footer from "@/components/Footer";
+import RandomBackground from "@/components/ui/RandomBackground";
 
 export default function Home() {
   return (
     <main className="relative z-10">
-      <Navbar></Navbar>
+      <Navbar />
       <HeroSection />
-      <AboutSection />
-      <Product />
-      <BenefitSection />
-      <IngredientSection />
-      <TestimonialSection />
-      <BuySection />
+      <div className="relative">
+        <AboutSection />
+        <Product />
+        <BenefitSection />
+        <IngredientSection />
+        <TestimonialSection />
+        <BuySection />
+      </div>
+
       <Footer />
     </main>
   );

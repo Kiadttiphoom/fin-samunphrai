@@ -2,6 +2,8 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden text-white py-12 text-center">
       <div className="relative z-10 container mx-auto px-6">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
+
         {/* 🌿 Brand Name */}
         <h3 className="text-2xl md:text-3xl font-bold text-amber-400 mb-3">
           Fin Samunphrai
