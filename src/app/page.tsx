@@ -7,7 +7,6 @@ import IngredientSection from "@/components/IngredientSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import BuySection from "@/components/BuySection";
 import Footer from "@/components/Footer";
-import RandomBackground from "@/components/ui/RandomBackground";
 
 export default function Home() {
   return (
